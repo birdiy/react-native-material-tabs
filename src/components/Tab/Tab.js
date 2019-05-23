@@ -51,7 +51,7 @@ const Tab = ({
           </TabText>
         ) : (
           React.cloneElement(content, {
-            style: [content.props.style, { color }],
+            style: [{ color }, content.props.style],
           })
         )}
       </TabBody>
